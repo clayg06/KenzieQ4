@@ -1,0 +1,45 @@
+Open Mailbox 
+ Check for mail
+ if there's mail collect 
+ else if there's no mail 
+shut mailbox 
+
+If there's mail 
+Bring mail to the table and sort 
+
+Sorting mail
+Create stacks based on number of family members ( in my case 2)
+If it's my mail place in first stack
+else if it's my wife's place in second stack
+else if mail is not addressed to either of us but has importance of another nature
+place in third stack or trash mail if it's junk
+else mail is an important document place in stack relevant to wife or I 
+
+My stack 
+If mail is a  bill place into a sub-stack, named ss1
+else place mail into ss2
+
+Her stack
+If mail is a  bill place into a sub-stack, named hs1
+else place mail into hs2
+
+ss1
+Look through bills and prioritize bills based on due date 
+If bill's due date is due make payment
+else if bill's due date isn't due place at the bottom of the stack
+
+ss2
+If mail is an important document retian or file 
+else if not trash 
+
+hs1
+Look through bills and prioritize bills based on due date 
+If bill's due date is due make payment
+else if bill's due date isn't due place at the bottom of the stack 
+
+hs2
+If mail is an important document retain or file 
+else if not trash 
+
+Third stack
+Return to sender 
