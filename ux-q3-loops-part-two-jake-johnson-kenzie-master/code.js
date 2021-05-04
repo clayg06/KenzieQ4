@@ -1,25 +1,25 @@
 // Do not modify this array.
 const numberArray = [
-  469,
-  755,
-  244,
-  245,
-  758,
-  450,
-  302,
-  20,
-  712,
-  71,
-  456,
-  21,
-  398,
-  339,
-  882,
-  848,
-  179,
-  535,
-  940,
-  472,
+    469,
+    755,
+    244,
+    245,
+    758,
+    450,
+    302,
+    20,
+    712,
+    71,
+    456,
+    21,
+    398,
+    339,
+    882,
+    848,
+    179,
+    535,
+    940,
+    472,
 ];
 
 /*
@@ -39,11 +39,9 @@ Log all 20 elements of numberArray.
 console.log("1) - Log every number"); // These console.log lines are to help with grading, ignore them.
 
 function logEveryNumber() {
-  /* 
-  Your code goes below
-  Write a for or a while loop
-  Use console.log() to print every number 
-  */
+    for (let everyNumber of numberArray) {
+        console.log(everyNumber);
+    }
 }
 
 logEveryNumber();
@@ -66,11 +64,11 @@ number % 2 === 0 will be true if the number is even, and false if the number is 
 console.log("2) - Log even numbers");
 
 function logEvenNumbers() {
-  /* 
-  Your code goes below
-  Write a for or a while loop
-  console.log() the result 
-  */
+    for (let evenNumbers of numberArray) {
+        if (evenNumbers % 2 === 0) {
+            console.log(evenNumbers);
+        }
+    }
 }
 
 logEvenNumbers();
@@ -85,11 +83,11 @@ Display all the odd numbers contained in sampleArray.
 console.log("3) - Log odd numbers");
 
 function logOddNumbers() {
-  /* 
-  Your code goes below
-  Write a for or a while loop
-  console.log() the result 
-  */
+    for (let oddNumbers of numberArray) {
+        if (oddNumbers % 2 !== 0) {
+            console.log(oddNumbers);
+        }
+    }
 }
 
 logOddNumbers();
@@ -110,120 +108,123 @@ if number % 8 === 0, then it is divisible by 8.
 console.log("4) - Log numbers divisible by 8");
 
 function logNumbersDivisibleByEight() {
-  /* 
-  Your code goes below
-  Write a for or a while loop
-  console.log() the result 
-  */
+    for (let divisible8 of numberArray) {
+        if (divisible8 % 8 === 0) {
+            console.log(divisible8);
+        }
+    }
 }
 
 logNumbersDivisibleByEight();
 
 /*
----------------------------------------------------------------------------
-Exercise Five
+    ---------------------------------------------------------------------------
+    Exercise Five
 
-Display the sum of all the numbers in the array
-Hint: It should be 9096
-*/
+    Display the sum of all the numbers in the array
+    Hint: It should be 9096
+    */
 console.log("5) - Sum of numbers (9096)");
 
 function sumOfNumbers() {
-  /* 
-  Your code goes below
-  Write a for or a while loop
-  console.log() the result 
-  */
+    let total = 0;
+    for (let sumOfNum of numberArray) {
+        total += sumOfNum;
+    }
+    console.log(total);
 }
 
 sumOfNumbers();
 
 /*
----------------------------------------------------------------------------
-Exercise Six
+    ---------------------------------------------------------------------------
+    Exercise Six
 
-Count how many numbers are > 500
+    Count how many numbers are > 500
 
-Hint: Use the num variable provided below to keep track of how many times you have
-seen a number greater than 500.
+    Hint: Use the num variable provided below to keep track of how many times you have
+    seen a number greater than 500.
 
-There should be seven!
-*/
+    There should be seven!
+    */
 console.log("6) - count of numbers > 500 (7)");
 
 function countNumbersGreaterThanFiveHundred() {
-  let num = 0;
-  /* 
-  Your code goes below
-  Write a for or a while loop
-  Every time you find a number greater than 500, add one to num.
-  */
-
-  console.log(num);
+    let num = 0;
+    for (let countGreater of numberArray) {
+        if (countGreater > 500) {
+            num++;
+        }
+    }
+    console.log(num);
 }
 
 countNumbersGreaterThanFiveHundred();
 
 /*
----------------------------------------------------------------------------
-Exercise Seven
+    ---------------------------------------------------------------------------
+    Exercise Seven
 
-Display the smallest element in sampleArray.
-*/
+    Display the smallest element in sampleArray.
+    */
 console.log("7) - smallest number (20)"); // These console.log lines are to help with grading, ignore them.
 
 function findSmallestNumber() {
-  /* 
-  Your code goes below
-  Write a for or a while loop
-  console.log() the result 
-  */
+    let smallestNumber;
+    for (let currentNumber of numberArray) {
+        if (!smallestNumber || currentNumber < smallestNumber) {
+            smallestNumber = currentNumber;
+        }
+    }
+    console.log(smallestNumber);
 }
 
 findSmallestNumber();
 
 /*
----------------------------------------------------------------------------
-Exercise Eight
+    ---------------------------------------------------------------------------
+    Exercise Eight
 
-Display the largest element in sampleArray.
-*/
+    Display the largest element in sampleArray.
+    */
 console.log("8 - Largest Number (940)"); // These console.log lines are to help with grading, ignore them.
 
 function findLargestNumber() {
-  /* 
-  Your code goes below
-  Write a for or a while loop
-  console.log() the result 
-  */
+    let largestNumber;
+    for (let currentNumber of numberArray) {
+        if (!largestNumber || currentNumber > largestNumber) {
+            largestNumber = currentNumber;
+        }
+    }
+    console.log(largestNumber);
 }
 
 findLargestNumber();
 
 /*
----------------------------------------------------------------------------
-Exercise Nine
+    ---------------------------------------------------------------------------
+    Exercise Nine
 
-Filter the array for numbers which are less than 400.
+    Filter the array for numbers which are less than 400.
 
-First, create a new empty array.
+    First, create a new empty array.
 
-Then loop through the numberArray.
-  If a number is < 400, then add it to the new array.
+    Then loop through the numberArray.
+      If a number is < 400, then add it to the new array.
 
-When you are done, print out the new array.
-*/
+    When you are done, print out the new array.
+    */
 console.log("9 - find numbers < 400");
 
 function findNumbersLessThanFourHundred() {
-  let newArray = [];
-  /* 
-  Your code goes below
-  Write a for or a while loop
-  add all numbers less then 400 to newArray
-  */
+    let newArray = [];
+    for (let lessThan400 of numberArray) {
+        if (lessThan400 < 400) {
+            newArray.push(lessThan400);
+        }
+    }
 
-  console.log(newArray);
+    console.log(newArray);
 }
 
 findNumbersLessThanFourHundred();
